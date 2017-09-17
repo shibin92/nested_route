@@ -7,6 +7,12 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.route('account', function() {
+    this.route('submit-reading', function() {
+      this.route('account-detail');
+      this.route('meter-detail');
+    });
+  });
 });
 
 export default Router;
