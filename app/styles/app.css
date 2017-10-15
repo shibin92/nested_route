@@ -1,0 +1,86 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+.v-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+.container {
+    display: flex;
+    flex: 1;
+}
+main {
+    flex: 1;
+    padding: 1.5em;
+    box-sizing: border-box;
+    margin: 0;
+}
+.right-sidebar {
+    padding: 1.5em;
+    width: 15em;
+    background-color: #B4B4E8;
+}
+.topbar {
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #BCD0B1;
+}
+.bottom-bar {
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #FF6600;
+}
+.action {
+  display: inline-block;
+  padding: 1.5em 0 1.5em 1.5em;
+}
+.tools {
+    padding: 1.5em;
+    line-height: 1.5em;
+}
+nav {
+    margin-bottom: 0.5em;
+}
+nav a {
+    display: inline-block;
+    padding: 0.5em;
+    text-decoration: none;
+    background-color: #EAEACB;
+    color: black;
+}
+nav a.active {
+    background-color: #E0E059;
+    color: black;
+}
+
+.modal-background {
+    background-color: black;
+    opacity: 0.5;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.modal-container {
+   width: 100vw;
+   height: 100vh;
+   position: fixed;
+   top: 0;
+   left: 0;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.modal-dialog {
+    background-color: white;
+    padding: 4em;
+    border-radius: 5px;
+    border: 1px solid #B4B4E8;
+    position: relative;
+    z-index: 1;
+}

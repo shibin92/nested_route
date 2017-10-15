@@ -1,9 +1,14 @@
+{{meter-read/submit-meter-read/modal-target}}
 <div>
     <strong>Step 1: Account detail</strong>
     <div class='form-control'>
         {{input type='text' name='email' value=email}}
     </div>
     <div>
-        <button {{action 'onNext'}}>Next</button>
+        <button {{action "onNext"}}>Next</button>
     </div>
+
+    {{#if showModal}}
+        {{to-elsewhere named="modal" send=(hash body=(component "meter-read/submit-meter-read/modal-content") onCancel=(action "onCancel") onOutsideClick=(action "onCancel")) }}
+    {{/if}}
 </div>
